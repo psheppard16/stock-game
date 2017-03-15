@@ -14,6 +14,8 @@ class Window:
         self.root.resizable(False, False)
         self.root.bind_all('<KeyPress>', self.keyPressed)
         self.root.bind_all('<KeyRelease>', self.keyReleased)
+        self.root.bind("<Button-1>", self.mousePressed)
+        self.root.bind("<ButtonRelease-1>", self.mouseReleased)
 
 
     def run(self):
@@ -58,3 +60,19 @@ class Window:
         :return: None
         '''
         self.game.gameEngine.keyReleased(event)
+
+    def mousePressed(self, event):
+        '''
+        passes the mousePressed command onto gameEngine for convenience
+        :param event: the event object
+        :return: None
+        '''
+        self.game.gameEngine.mousePressed(event)
+
+    def mouseReleased(self, event):
+        '''
+        passes the mouseReleased command onto gameEngine for convenience
+        :param event: the event object
+        :return: None
+        '''
+        self.game.gameEngine.mouseReleased(event)
