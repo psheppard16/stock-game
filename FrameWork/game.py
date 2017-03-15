@@ -13,9 +13,9 @@ class Game:
         #do not remove anything
         self.window = Window(self)
         self.frameRateEngine = FrameRateEngine(self)
+        self.saveEngine = SaveEngine()
         self.gameEngine = GameEngine(self)
         self.drawingEngine = DrawingEngine(self)
-        self.saveEngine = SaveEngine()
         self.screenEngine = ScreenEngine(self)
 
         self.window.root.after(1, self.loop)
