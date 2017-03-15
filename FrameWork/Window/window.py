@@ -9,7 +9,7 @@ class Window:
 
         #setting up the default settings for window
         self.root = tkinter.Tk()
-        self.root.title("Red Shooter")
+        self.root.title("Game")
         self.root.geometry("1280x720")
         self.root.resizable(False, False)
         self.root.bind_all('<KeyPress>', self.keyPressed)
