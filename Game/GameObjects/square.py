@@ -1,3 +1,4 @@
+__author__ = 'Preston Sheppard'
 from Game.GameObjects.gameObject import GameObject
 class Square(GameObject):
     def __init__(self, game):

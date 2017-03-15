@@ -1,4 +1,4 @@
-__author__ = 'python'
+__author__ = 'Preston Sheppard'
 from FrameWork.Display.canvasObject import CanvasObject
 try:
     import pygame
