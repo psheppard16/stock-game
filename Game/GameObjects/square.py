@@ -1,7 +1,7 @@
 from Game.GameObjects.gameObject import GameObject
 class Square(GameObject):
     def __init__(self, game):
-        super().__init__(game, 500, 500, xVel=5, layer=100)
+        super().__init__(game, 500, 500, xVel=25, layer=100)
         self.size = 100
         pass
 

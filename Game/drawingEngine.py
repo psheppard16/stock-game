@@ -12,6 +12,8 @@ class DrawingEngine(CanvasObject):
 
         self.game = game
         self.gameEngine = game.gameEngine #providing access to gameEngine
+        self.setBackgroundColor((60, 100, 175))
+        self.setDrawLayer(50)
 
 
     def getScreenX(self, x):
@@ -54,5 +56,7 @@ class DrawingEngine(CanvasObject):
         self.showRectangle((100, 100), (200, 200), (255, 0, 165), secondaryColor=(255, 255 ,0), width=2, shiftPosition=True)
         self.showRectangle((100, 100), (200, 200), (255, 0, 0))
         self.showCircle((500, 500), 100, (255, 165, 0))
+        self.showPolygon([(100, 100), (200, 200), (300, 100), (200, 500)], (250, 165, 0), width=15, secondaryColor=(0, 0, 255))
+        self.showLine((1000, 100), (700, 500), (250, 165, 0), 15, rounded=True)
 
 
